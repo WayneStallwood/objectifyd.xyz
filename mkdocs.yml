@@ -1,0 +1,17 @@
+site_name: ObjectifyD.xyz
+site_url: http://objectifyd.xyz
+use_directory_urls: false
+# nav:
+#   - Home: index.md
+
+extra_css:
+  - css/extra.css
+theme:
+  name: material
+  favicon: img/favicon.png
+  logo: img/logo.webp
+  features:
+    - navigation.expand
+    - toc.autohide
+  palette:
+    primary: light blue

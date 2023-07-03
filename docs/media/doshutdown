@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Calls the OctoPrint api and stops the current job
+# Set variables here
+
+API_KEY=addyouroctoprintapikeyhere
+COMMAND=cancel
+HOST=127.0.0.1
+
+#Log like a pro
+exec 1> >(logger -s -t $(basename $0)) 2>&1
+
+echo "Stopping the print because the UPS is low"
+
+#api commands
+
+# Print error message on Rumba Screen
+curl -sS --header "Content-type: application/json" --header "X-Api-Key: $API_KEY" --request POST --data "{\"command\": \"M117 Power Failure\" }" http://$HOST/api/printer/command
+
+#Write job progress to file in pi home (in case the information is useful to recover the print)
+curl -sS --header "Content-type: application/json" --header "X-Api-Key: $API_KEY" --request GET http://$HOST/api/job > /home/pi/power_failure_job_stat.txt
+
+# Abort the print
+curl -sS --header "Content-type: application/json" --header "X-Api-Key: $API_KEY" --request POST --data "{\"command\": \"$COMMAND\" }" http://$HOST/api/job && echo "print stopped"
+
+# Sleep forever (we don't want apcupsd taking over and shutting down the pi before we finish the current layer and abort the print
+sleep infinity
+
