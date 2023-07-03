@@ -1,15 +1,18 @@
 So it only took one mid print power cut to realise I need a UPS for my 3D printer.
 
-it's even worse for a machine like mine with a E3D all metal head as it requires active cooling to stop damage to the head mount or prevent a right mess of molten filament inside the heatbreak.
+it's even worse for a machine like mine with a E3D all metal hotend as it requires active cooling to stop damage to the mount or prevent a right mess of molten filament inside the heatbreak.
 
-See below for instructions on setting up an APC UPS so that it can send a command to octopi to abort the print and start cooling the head before the batteries in the UPS are exhausted.
+See below for instructions on setting up an APC UPS so that it can send a command to octopi to abort the print and start cooling the hotend before the batteries in the UPS are exhausted.
 
 I used a APC BackUPS Pro 550, which seems to be about the minimum spec I can get away with, on my printer this gives me approximately 5 minutes of print time without power, or 40 minutes of the printer powered but idle, other UPS's would work but APC is the only type tested with these instructions
 
-Test this throughly and make sure you have enough runtime to cool the head before the batteries are exhausted, the only way to do this properly is to set up a test print and pull the power.
+Test this throughly and make sure you have enough runtime to cool the hotend before the batteries are exhausted, the only way to do this properly is to set up a test print and pull the power.
 
 Once you have installed the power leads to and from the UPS and got the printer powered through it (not forgetting the Rpi or whatever you have running octoprint also needs power...mine is powered via the printer PSU ) You need to install acpupsd, it's in the default repo for raspian so just install it with apt.
+
+```
 sudo apt-get install apcupsd
+```
 
 Now we need to tweak apcupsd's configuration a bit
 
