@@ -4,7 +4,7 @@ Experts we may be, but artists we are not...even remembering the Icons for [200+
 
 But sometimes nothing beats a dry wipe board to huddle around.
 
-My answer was these...They are magnetic so they stick on magnetic surface whiteboards (I'm starting to curse the fasionable glass whiteboards now)
+My answer was these...They are magnetic so they stick on magnetic surface whiteboards (I'm starting to curse the fashionable glass whiteboards now)
 
 ![Whiteboard](../img/whiteboard.jpg)
 
