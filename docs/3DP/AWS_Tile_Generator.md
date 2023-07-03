@@ -20,6 +20,6 @@ With a simple addition to the manifest I can now create new tiles for new servic
 
 ## Resources
 
-[Github Repo](https://github.com/WayneStallwood/AWS-Tile-Generator) for the generator here, could be easily adapted to generate tiles from any svg source.
+[Github Repo](https://github.com/WayneStallwood/AWS-Tile-Generator) for the generator here, could be easily adapted to generate tiles from any svg source. Some of the most popular tiles are pre-generated in the samples directory.
 
 Jeff Barr did an excellent writeup [here](https://nextjeff.medium.com/3d-printable-aws-tile-generator-833a7f925ffa) of their experience making these tiles if you want to learn more about the process end to end.
