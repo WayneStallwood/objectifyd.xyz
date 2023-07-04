@@ -1,0 +1,21 @@
+*Originally published on digimatic.co.uk in 2010, 13 years later it's still working well and still available to buy*
+
+##Duratool D00674 Soldering/Rework Station
+
+For 5 years now I have had the use of a Pace MBT, it was on loan to me during and after a period of contract electronic servicing I was performing for a client. It's a great piece of kit but eventually the time came when they wanted it back. A new model from Pace of similar specification would cost $2000 upwards. Given my fairly infrequent workload I decided to research into cheaper alternatives.
+
+Enter the Duratool D00674, This Chinese built unit is actually sold under several brands but the Duratool variant is sold almost exclusively by the Farnell/CPC/Newark group. It also seems to be the cheapest variant at the time of writing.
+
+[Here](https://cpc.farnell.com/duratool/d00674/soldering-rework-station-uk-eu/dp/SD01386) £149 gets you the station with a Soldering Iron and the above mentioned Vacuum Reflow tool, Plus stands for both, 3 sizes of bits for the de-soldering tool and spare filters and cleaning tools. I ordered spares of everything including multiples of each soldering bit available, spare filters and spare elements. Being that this is a rebranded unit there is no guarantee of spares availability long term so best to stock up now. Also the bits themselves are suspiciously cheap at just under a pound each, this may indicate poor plating and therefore a short life expectancy. My total spend was just shy of £170 plus VAT
+
+Alternatively there is an SMD variant that swaps the Vacuum Reflow tool for a hot air SMD tool. You can then buy a standalone version of the Reflow tool that connects to a dedicated base station. Now I wasn't expecting much given that even including the spares this rig costs about 1/10 of the Pace it was replacing. Yet I have done a few jobs with it now and it performs really well. It might be my imagination or tired filters on the old Pace. But it actually seems to have better de-solder performance. Generally as long as you have the right temperature dialed in and are using the right size bit on the de-solder tool it works almost flawlessly.
+
+Heat up time is quick and you have full independent control of both tools from 160-480°C, there is on tip temperature feedback with the backlit display for each tool showing current and target temperatures . An improvement over the Pace where you have a single temperature display that you have to cycle between tools and only shows target temps when you are setting them.
+
+Each tool can be powered independently so if you are only soldering you can shut down the de-soldering side and vice versa. On the negative side, the controls and irons themselves feel a little cheap. The buttons on the facia of the Base Station are very clicky. The bits are hard to change on a hot tool compared to the simple grub screw fixing on the Pace unit. It really could do with one size higher on the available de-solder bits. The largest isn't quite big enough for some things you may encounter like PCB power connectors. Also the capture vessel on the de-solder tool is a bit fiddly to empty although it can at least be done with the tool hot which on the Pace is likely to get you burnt. Finally there is still the question of bit lifetime. Pace bits can be horribly expensive but even with fairly regular use will last years. I find it hard to believe that these ones are going to have a decent lifespan at £2 each but only time can tell so I will update here once I have had the unit 6 months.
+
+Overall though these are small criticisms I feel given the price and performance of this unit. The Pace it replaced has done 5 years of light/medium use and is now in need of a service which alone would cost more than the outright purchase price of this station. 
+
+##Update
+
+In 2023 the Soldering Iron thermo sensor failed, this can be replaced. But a whole replacement Iron was available from CPC for just £12+VAT. I bought that and replaced some of the soldering bits that had eventually worn and replaced all the filters..and this unit continues to be a reliable station.
