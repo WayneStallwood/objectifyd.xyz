@@ -8,10 +8,8 @@ extra_css:
   - css/extra.css
 theme:
   name: material
-  favicon: img/favicon.png
-  logo: img/logo.webp
   features:
     - navigation.expand
     - toc.autohide
   palette:
-    primary: light blue
+    primary: indigo
