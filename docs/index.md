@@ -1,5 +1,4 @@
-# Home
-
+![Home_Logo](img/objectify.jpg)
 
 
 [ObjectifyD.xyz](http://objectifyd.xyz): To give expression to (something, such as an abstract notion, feeling, or ideal) in a form that can be experienced by others.
