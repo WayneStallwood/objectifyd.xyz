@@ -6,7 +6,7 @@ I've always been interested in higher end full range driver designs, time to do 
 
 I ended up with this, quarterwave Taper Tube loaded sealed satellites...with a Peerless 2" Long Throw Driver (the best one I could find) using a design I found on Thingiverse and tweaked a little to get the enclosure sizing right.
 
-I coupled them with an old powered Subwoofer that was skipped due to faulty Power Supply capacitors and a Linn Knekt zone amplifier I've modified to not need all the Linn multiroom bits anymore.
+I coupled them with an old powered Subwoofer that was skipped due to faulty Power Supply capacitors and a Linn [Knekt](../Projects/Knekt.md) zone amplifier I've modified to not need all the Linn multiroom bits anymore.
 
 ![ShellSpeaker](../img/Shell_speaker_fin.jpg)
 
