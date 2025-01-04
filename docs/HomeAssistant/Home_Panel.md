@@ -27,6 +27,9 @@ Pi3 (B+ minimum recommended) or Pi4/5 (these would also support running HomeAssi
 [Heatsinks](https://www.amazon.co.uk/VooGenzek-Heatsinks-Raspberry-Aluminum-Conductive/dp/B0CSKBRVXT)
 *Not essential, but recommended for best performance*
 
+If you want to use my case design then it is shared [here](https://www.thingiverse.com/thing:6900331), but this was a pretty rushed model just to get the displays functional...I'm waiting to find a neater alternative to the PIR sensor before I design something a little better, eventually I intend to wall mount these so will be redesigning the housing.
+
+
 **Software Setup**
 
 *OS Setup*
