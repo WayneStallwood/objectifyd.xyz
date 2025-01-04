@@ -1,4 +1,4 @@
-Home Assistant Panel/Dashboard
+## Home Assistant Panel/Dashboard
 
 I wanted a simple status display/control panel for Home assistant I could make cheaply enough to drop several around the house. It's super useful for just keeping an eye on things rather than having to helicopter Apps on my phone.
 
@@ -8,7 +8,7 @@ The software configuration would also work for Pi's being used for big screen da
 
 ![Panel1](../img/panel1.jpg)  ![Panel2](../img/panel2.jpg)
 
-**Hardware Requirements**
+## Hardware Requirements
  
 Pi3 (B+ minimum recommended) or Pi4/5 (these would also support running HomeAssistant directly, but my HA runs in a container on my home server)
 
@@ -30,9 +30,9 @@ Pi3 (B+ minimum recommended) or Pi4/5 (these would also support running HomeAssi
 If you want to use my case design then it is shared [here](https://www.thingiverse.com/thing:6900331), but this was a pretty rushed model just to get the displays functional...I'm waiting to find a neater alternative to the PIR sensor before I design something a little better, eventually I intend to wall mount these so will be redesigning the housing.
 
 
-**Software Setup**
+## Software Setup
 
-*OS Setup*
+**OS Setup**
 
 There are various Kiosk mode specific distributions for the Pi, but none of them seemed particularly well maintained at the time of writing. So I decided to just reconfigure stock Raspbian...so just go ahead and grab the relevant release from [here](https://www.raspberrypi.com/software/) and configure as normal for your Pi model.
 
@@ -59,7 +59,7 @@ If you are on a Pi4 or later I'd also recommend switching from Wayland back to X
 
 Reboot and confirm autologin works and you get to a desktop
 
-*Kiosk Mode*
+**Kiosk Mode**
 
 For the Home Assistant panel we are going to use Chromium in Kiosk mode and then we are going to use a Systemd service to launch that and keep it alive. But before we do that it's a good idea to log the browser into your Home Assistant installation and make sure the "Keep logged in" option is set.
 
@@ -142,7 +142,7 @@ WantedBy=graphical.target
 
 **Important** if you selected a user other than Pi when configuring auto-login then you will need to modify USER,GROUP and the two file locations in the script above to match
 
-*Testing*
+**Testing**
 
 Enable the new systemd service 
 
@@ -164,7 +164,7 @@ At any point you can stop the service again to get back to the desktop, if somet
 sudo systemctl stop panel.service
 ```
 
-**PIR Sensor**
+## PIR Sensor
 
 Adding this sensor with the first version of panel.sh above will achieve the following:
 
@@ -194,15 +194,15 @@ The PIR sensor I linked is active-high.  This config sets gpio21 (Pin 40 of the 
 
 Connect Vin of the sensor to pin 1 (3.3v) Out to Pin 40 and Gnd to Pin 39, reboot and you should be set.
 
-**Power**
+## Power
 
 As mentioned previously I didn't want to use the USB power input of the Pi (which via the USB standoff for the touchscreen also powers the display) because the screen I used ends up with this in an inconvienient place..plus finding USB supplies with at least 3A can be tricky. Therefore I use the 5v DC supply with a barrel plug as linked above...and then wire a DC socket to Pins 2 (+5v) and 6 (Gnd) Take care to wire the centre pin to pin 2 and the outer barrel to Pin 6 to match the polarity of the supply or you will damage the Pi
 
-**Cooling**
+## Cooling
 
 So far I haven't had the need to apply active cooling to the Pi...however to avoid temp warnings or throttling when displaying screens with rapid changes or video content I recommend attaching chip heatsinks to the Pi
 
-**Booting**
+## Booting
 
 Personally I dislike the graphical splash boot default on the later builds of Raspbian and would rather a text mode boot where I can see what's going on...it also seems to boot faster. If you'd like this then run the following command (be patient on a Pi3 or on a slower SD card as it has to rebuild initramfs and this takes a while)
 
@@ -210,11 +210,11 @@ Personally I dislike the graphical splash boot default on the later builds of Ra
 plymouth-set-default-theme -R text
 ```
 
-**Wrapping up**
+## Wrapping up
 
 So that's it...a pretty simple way to have a live panel/status display using a Raspberry Pi...I'm using this for Home Assistant with a set of customised panels in lovelace (Check out the [Mushroom card](https://github.com/piitaya/lovelace-mushroom) extensions for really touch friendly elements). But this could equally be used for any web based dashboard/control panel on any size of HDMI screen.
 
-**Important Note**
+## Important Note
 
 This isn't sufficiently hardened to be a public web kiosk, there are probably several ways of escaping the browser and launching other applications, particularly with a keyboard connected..the default user on a Pi is in sudoers etc etc...I would not recommend using this in a public space in its current form.
 
