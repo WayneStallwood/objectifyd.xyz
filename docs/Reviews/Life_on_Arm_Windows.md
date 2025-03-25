@@ -8,7 +8,7 @@ Follow my notes below as I make my attempt to use Windows 11 (Arm) as my daily m
 
 ## Hardware
 
-I'm not going to dwell too much on the hardware, this isn't a laptop review...Though there is little diversity in Arm Architecture for laptops at the moment, most machines offer a similar spec built around Qualcomm's Snapdragon X series SoC. Most of the machine is in the SoC so ascetics/battery/keyboard aside there isn't much difference.
+I'm not going to dwell too much on the hardware, this isn't a laptop review...Though there is little diversity in Arm Architecture for laptops at the moment, most machines offer a similar spec built around Qualcomm's Snapdragon X series SoC. Most of the machine is in the SoC so aesthetics/battery/keyboard aside there isn't much difference.
 
 I opted for the HP Elitebook Ultra G1Q8, this is the lower spec with the Snapdragon X Plus SoC. A more expensive version is available with the Snapdragon X Elite which clocks a little higher and has 12 rather than 8 cores. But at the time of writing it was 40% more expensive. A cheaper alternative is also available in the Omnibook range, which has almost identical hardware but different support options and software load.
 
