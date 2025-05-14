@@ -50,10 +50,16 @@ As I mentioned there is the constant risk of application compatibility issues wi
 
 I'll keep a list here of problems I encounter, there are also community [lists](https://windowsonarm.org/) that you can check.
 
-* Bambu Studio (Crashes as soon as the proprietary Bambu Network Plugin is enabled on the current version) Previous version works, as does Orca Slicer (Stable build) so not a big issue for me at the moment
+### Resolved
 
-* Win-Kex in WSL (This provides a desktop GUI experience for my Linux Subsystem. I can't get this to work due to binary compatibility between my Arm based WSL kali-linux distro and the Windows binaries it needs to load, possibly there is a workaround I just haven't figured out yet)
+* Bambu Studio (Crashes as soon as the proprietary Bambu Network Plugin is enabled on the current version) Previous version works, as does Orca Slicer (Stable build) so not a big issue for me at the moment (Fixed as of V2.0.2)
 
 * [PIA VPN](https://www.privateinternetaccess.com) (Loads Network Drivers so had to be an Arm build, had to use a beta build of their Arm version, but that seems to work fine)
+
+* Draw.IO (scoop was picking the x86 binary, reported to scoop package owner and fixed within 24 hours)
+
+### Unresolved
+
+* Win-Kex in WSL (This provides a desktop GUI experience for my Linux Subsystem. I can't get this to work due to binary compatibility between my Arm based WSL kali-linux distro and the Windows binaries it needs to load, possibly there is a workaround I just haven't figured out yet)
 
 *Note: I generally recommend using a package manager for Windows, particularly if like me you came from Linux and are used to such conveniences. But this becomes even more useful on Windows-Arm as Win-get and [Scoop](https://scoop.sh/) seem to automatically prefer Arm built packages when available. This really helps in making sure you are downloading the right architecture version. I haven't tested [Chocco](https://chocolatey.org/) yet as I just prefer the way Scoop does things.*
