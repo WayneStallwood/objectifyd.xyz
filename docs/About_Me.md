@@ -9,6 +9,6 @@ Wayne Stallwood *("Digimatic" online sometimes)*
 
 I am an IT Professional with Broad Experience of Technology. I live in the South East of England.
 
-Currently I am employed by Amazon Web Services as a Principal Consultant.
+Currently I am employed by Amazon Web Services as a Principal Solutions Architect.
 
 If you want to see my CV then you will have to contact me first, [here](https://www.linkedin.com/in/wayne-stallwood-a544351/)
