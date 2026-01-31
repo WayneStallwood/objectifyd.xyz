@@ -32,12 +32,14 @@ If you want to use my case design then it is shared [here](https://www.thingiver
 
 ## Software Setup
 
+Update: There is a bash script available [here](https://github.com/WayneStallwood/rpi_panel_kiosk/tree/main) which automates the setup on the standard Raspberry Pi OS , but if you want to understand a bit more about the configuration or make changes the manual steps are below.
+
 **OS Setup**
 
-There are various Kiosk mode specific distributions for the Pi, but none of them seemed particularly well maintained at the time of writing. So I decided to just reconfigure stock Raspbian...so just go ahead and grab the relevant release from [here](https://www.raspberrypi.com/software/) and configure as normal for your Pi model.
+There are various Kiosk mode specific distributions for the Pi, but none of them seemed particularly well maintained at the time of writing. So I decided to just reconfigure stock Raspberry Pi OS...so just go ahead and grab the relevant release from [here](https://www.raspberrypi.com/software/) and configure as normal for your Pi model.
 
 
-First clean up some things that may be on your Raspbian image that you really don't need.
+First clean up some things that may be on your image that you really don't need.
 
 ```
 apt purge wolfram-engine scratch scratch2 nuscratch sonic-pi idle3 -y
