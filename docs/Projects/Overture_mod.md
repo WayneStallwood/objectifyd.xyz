@@ -12,7 +12,7 @@ The result will be a US tuner in the UK will sound overly bright and tinny, and 
 
 AM also differs (not that I use AM) 10khz tuning steps in the US 9khz in the UK
 
-AI assisted searches told me I needed to find a UK/EU tuner board (part 2636) That's would be tough to find and an expense I didn't budget for when pricing up restoring this unit...But how different are those tuning boards really?
+AI assisted searches told me I needed to find a UK/EU tuner board (part 2636) That would be tough to find and an expense I didn't budget for when pricing up restoring this unit...But how different are those tuning boards really?
 
 Turning to the service manual I noted the parts list was the same for both boards, it figures manufacturers generally don't want to actually make different variant boards. Then in the schematic there are some clues.
 
